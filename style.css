@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: '"Playfair Display", serif';
+}
+
+body {
+      background-color: #c4c4e8;
+      color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #c4c4e8;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #222;
+}
+
+.navbar nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #555;
+      font-weight: 400;
+      font-size: 1rem;
+}
+
+
+
+.navbar .icons span {
+      margin-left: 1.5rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+}
+
+.navbar nav a:hover,
+.navbar .icons span:hover {
+      color: #ff5a5f;
+}
+
+
+/* Carousel Section */
+.carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      background-color: #c4c4e8;
+}
+
+.carousel-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+}
+
+.product {
+      text-align: center;
+      opacity: 0.5;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.product.center {
+      opacity: 1;
+      transform: scale(1.1);
+}
+
+.product img {
+      width: 200px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product h2 {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+}
+
+.product p {
+      font-size: 1rem;
+      color: #777;
+}
+
+
+.carousel-nav {
+      display: flex;
+      gap: 5rem;
+      margin-top: 1rem;
+}
+
+.arrow {
+      font-size: 2rem;
+      color: #555;
+      cursor: pointer;
+      transition: color 0.3s ease;
+}
+
+.arrow:hover {
+      color: #333;
+}
+
+/* Social Media Icons */
+.social-media {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+}
+
+.social-icon {
+      color: #555;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+      color: #ff5a5f;
+}
+
+/* Footer Section */
+.footer {
+      background-color: #c4c4e8;
+      color: #222;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+}
+
+.footer p {
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+}
+
+.footer a {
+      color: #222;
+      text-decoration: none;
+      margin: 0 0.5rem;
+}
+
+.footer a:hover {
+      color: #ff5a5f;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet Devices (768px and below) */
+@media (max-width: 768px) {
+      .navbar nav a {
+            margin-left: 1rem;
+            font-size: 0.9rem;
+      }
+
+      .navbar h1 {
+            font-size: 1.5rem;
+      }
+
+      .carousel-container {
+            flex-direction: column;
+      }
+
+      .product img {
+            width: 180px;
+      }
+
+      .carousel-nav {
+            gap: 1.5rem;
+      }
+
+      .arrow {
+            font-size: 1.8rem;
+      }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+      .navbar {
+            flex-direction: column;
+            padding: 1rem;
+      }
+
+      .navbar h1 {
+            font-size: 1.4rem;
+      }
+
+      .navbar nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .navbar nav a {
+            margin: 0.5rem 0;
+            font-size: 0.8rem;
+      }
+
+      .navbar .icons {
+            margin-top: 0.5rem;
+      }
+
+      .carousel-container {
+            flex-direction: column;
+            gap: 1rem;
+      }
+
+      .product img {
+            width: 150px;
+      }
+
+      .product h2 {
+            font-size: 1rem;
+      }
+
+      .product p {
+            font-size: 0.9rem;
+      }
+
+      .carousel-nav {
+            gap: 1rem;
+      }
+
+      .arrow {
+            font-size: 1.5rem;
+      }
+
+      .social-media {
+            gap: 1rem;
+      }
+
+      .social-icon {
+            font-size: 1.2rem;
+      }
+
+      .footer {
+            padding: 1rem;
+      }
+
+      .footer p {
+            font-size: 0.8rem;
+      }
+}
